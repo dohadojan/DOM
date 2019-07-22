@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Exercise #6: Content show/hide</title>
     <style>
+        
         * {
             font-family: Georgia, serif;
         }
@@ -37,7 +38,40 @@
         }
     </style>
     <script>
+
         /* TODO this is for you to complete */
+        window.onload = function() {
+            var show1 = document.getElementById('p1_show');
+            var text1 = document.getElementById('p1_text');
+            var hide1 = document.querySelector('#p1_text p a');
+            var show2 = document.getElementById('p2_show');
+            var text2 = document.getElementById('p2_text');
+            var hide2 = document.querySelector('#p2_text p a');
+            var show3 = document.getElementById('p3_show');
+            var text3 = document.getElementById('p3_text');
+            var hide3 = document.querySelector('#p3_text p a');
+            
+            show1.onclick = function() {
+                text1.hidden = false;
+            }
+            hide1.onclick = function() {
+                text1.hidden = true;
+            }
+            show2.onclick = function() {
+                text2.hidden = false;
+            }
+            hide2.onclick = function() {
+                text2.hidden = true;
+            }
+            show3.onclick = function() {
+                text3.hidden = false;
+            }
+            hide3.onclick = function() {
+                text3.hidden = true;
+            }
+        }
+    </script>
+</head>
     </script>
 </head>
 <body>
